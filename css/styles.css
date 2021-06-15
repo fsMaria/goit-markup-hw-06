@@ -777,3 +777,43 @@ html {
   align-items: center;
   cursor: pointer;
 }
+
+/*  ФОРМЫ ЗАЯВКИ */
+.application-form {
+  /* min-width: 448px;
+  max-height: 342px; */
+  margin-top: 40px;
+  
+}
+#comment {
+  resize: none;
+}
+.provoke-text {
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  margin-left: 41px;
+  margin: 39px;
+  margin-bottom: 12px;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 20px;
+  line-height: 1.15;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
+}
+.application-row {
+  display:block;
+  width: 448px;
+  height: 40px;
+  
+}
+.modal-icon {
+
+}
+.sub-form {
+  margin-left: 93px;
+}
+.sub-area {
+  margin-top: 20px;
+}
