@@ -14,6 +14,7 @@
   --work-box-color: rgba(47, 48, 58, 0.8);
   --icon-color: rgba(175, 177, 184, 1);
   --vp-background: rgba(0, 0, 0, 0.2);
+  --input-color: rgba(33, 33, 33, 0.2);
   --card-set-gap: 30px;
   --trn-time: 250ms;
   --modal-button-color: rgba(0, 0, 0, 0.1);
@@ -779,11 +780,22 @@ html {
 }
 
 /*  ФОРМЫ ЗАЯВКИ */
-.application-form {
-  /* min-width: 448px;
-  max-height: 342px; */
+
+.form {
+  width: 528px;
   margin-top: 40px;
-  
+  padding-left: 41px;
+  padding-right: 39px;
+}
+.form-group {
+display: flex;
+flex-direction: column;
+margin-bottom: 10px;
+}
+.form-group input{
+  height: 40px;
+  border-color: var(--input-color);
+  border-radius: 4px;
 }
 #comment {
   resize: none;
@@ -792,8 +804,8 @@ html {
   /* display: flex;
   justify-content: center;
   align-items: center; */
-  margin-left: 41px;
-  margin: 39px;
+  /* margin-left: 41px;
+  margin: 39px; */
   margin-bottom: 12px;
   font-weight: 700;
   font-style: normal;
@@ -802,12 +814,7 @@ html {
   letter-spacing: 0.03em;
   color: var(--title-text-color);
 }
-.application-row {
-  display:block;
-  width: 448px;
-  height: 40px;
-  
-}
+
 .modal-icon {
 
 }

@@ -362,28 +362,36 @@
             <use href="./imagen/icon/symbol-defs.svg#icon-close"></use>
         </svg></button>
         <div>
-        <form action="#" class="application-form">
+        <form action="#" class="form">
             <b class="provoke-text">Оставьте свои данные, мы вам перезвоним</b>
-            <label for="username">Имя</label>
-            <svg width="18" height="18" class="modal-icon">
-                <use href="./imagen/icon/symbol-defs.svg#icon-person"></use>
-            </svg>
-            <input type="text" name="name" id="username" class="application-row">
+            <div class="form-group">
+                <label for="username">Имя</label>
+                    <svg width="18" height="18" class="modal-icon">
+                        <use href="./imagen/icon/symbol-defs.svg#icon-person"></use>
+                    </svg>
+                <input type="text" name="name" id="username" class="application-row">
+            </div>
 
-            <label for="user">Телефон</label>
-            <svg width="18" height="18">
-                <use href="./imagen/icon/symbol-defs.svg#icon-phone-black"></use>
-            </svg>
-            <input type="tel" name="phone" id="user-phone" class="application-row">
+            <div  class="form-group">
+                <label for="user">Телефон</label>
+                    <svg width="18" height="18">
+                        <use href="./imagen/icon/symbol-defs.svg#icon-phone-black"></use>
+                    </svg>
+                <input type="tel" name="phone" id="user-phone" class="application-row">
+            </div>
 
-            <label for="user-email">Почта</label>
-            <svg width="18" height="18">
-                <use href="./imagen/icon/symbol-defs.svg#icon-email-black"></use>
-            </svg>
-            <input type="email" name="email" id="user-email" class="application-row">
+            <div  class="form-group">
+                <label for="user-email">Почта</label>
+                    <svg width="18" height="18">
+                        <use href="./imagen/icon/symbol-defs.svg#icon-email-black"></use>
+                    </svg>
+                <input type="email" name="email" id="user-email" class="application-row">
+            </div>
 
-            <label for="comment">Комментарий</label>
-            <textarea name="feedback" id="comment" cols="30" rows="10" placeholder="Введите текст"></textarea>
+            <div  class="form-group">
+                <label for="comment">Комментарий</label>
+                <textarea name="feedback" id="comment" cols="10" rows="7" placeholder="Введите текст"></textarea>
+            </div>
             <p>Соглашаюсь с рассылкой и принимаю <a href="">Условия договора</a></p>
             <button type="submit">Отправить</button>
         </form>
