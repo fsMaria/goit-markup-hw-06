@@ -859,8 +859,24 @@ fill: var(--accent-color);
   font-size: 14px;
   color: var(--placeholder-color);
 }
-
 .form-conditions {
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+.agree-form {
+  width: 423px;
+  display: flex ;
+  justify-content: baseline;
+}
+.conditions-icon {
+  
+}
+.sub-bt{
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.form-conditions-link {
 color: var(--accent-color);
 border-bottom: 1px solid var(--accent-color);
 }
