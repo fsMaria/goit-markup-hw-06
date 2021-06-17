@@ -18,7 +18,7 @@
   --placeholder-color: rgba(117, 117, 117, 0.5);
   --ft-border-color: rgba(255, 255, 255, 0.3);
   --card-set-gap: 30px;
-  --trn-time: 250ms;
+  --trn-time: 2500ms;
   --modal-button-color: rgba(0, 0, 0, 0.1);
 }
 /* цвет основного текста rgba(117, 117, 117, 1) */
@@ -59,7 +59,7 @@ img {
 
 /*  ЛОГОТИП */
 .logo {
-  /* margin-right: 93px; */
+  margin-right: 93px;
   font-family: raleway;
   font-size: 26px;
   font-weight: 700;
@@ -162,6 +162,7 @@ img {
   letter-spacing: 0.06em;
   text-align: center;
   border: none;
+
   transition-property: background-color;
   transition-duration: var(--trn-time);
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -518,6 +519,7 @@ html {
 }
 .footer .logo {
   margin-bottom: 20px;
+  margin-right: auto;
 }
 .location {
   margin-bottom: 9px;
@@ -754,7 +756,7 @@ html {
   transition-duration: var(--trn-time);
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
-  min-width: 528px;
+  max-width: 528px;
   min-height: 581px;
   background-color: var(--white-color);
   border-radius: 4px 4px;
@@ -779,22 +781,47 @@ html {
   justify-content: center;
   align-items: center;
   cursor: pointer;
-}
 
+  transition-property: fill;
+  transition-duration: var(--trn-time);
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+[data-modal-close] svg:hover,
+[data-modal-close] svg:focus {
+ 
+  fill: var(--accent-color);
+}
 /*  ФОРМЫ ЗАЯВКИ */
 
 .form {
-  width: 528px;
- padding-top: 40px;
+  width: 100%;
+  padding-top: 40px;
   padding-left: 41px;
   padding-right: 39px;
+}
+.provoke-text {
+  margin-bottom: 12px;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 20px;
+  line-height: 1.15;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
 }
 .form-group {
 display: flex;
 flex-direction: column;
 margin-bottom: 10px;
-/* position: relative; */
+position: relative;
 }
+
+.modal-icon {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-5%);
+}
+
 .form-input{
   height: 40px;
   border: 1px solid var(--input-color);
@@ -816,34 +843,26 @@ fill: var(--accent-color);
   margin-bottom: 4px;
 }
 .comment {
+  width: 448px;
+  height: 120px;
   border: 1px solid var(--input-color);
   border-radius: 4px;
   resize: none;
   padding: 12px 16px;
 }
+.comment:hover,
+.comment:focus {
+  border: 1px solid var(--accent-color);
+  outline: none;
+}
 .form-group .comment::placeholder {
   font-size: 14px;
   color: var(--placeholder-color);
 }
-.provoke-text {
-  margin-bottom: 12px;
-  font-weight: 700;
-  font-style: normal;
-  font-size: 20px;
-  line-height: 1.15;
-  letter-spacing: 0.03em;
-  color: var(--title-text-color);
-}
-.modal-icon {
-  position: absolute;
-  top: 50%;
-  left: 12px;
-  transform: translateY(-5%);
 
-}
-
-.form-group{
-  position: relative;
+.form-conditions {
+color: var(--accent-color);
+border-bottom: 1px solid var(--accent-color);
 }
 
 
@@ -851,9 +870,9 @@ fill: var(--accent-color);
 
 
 
-               /* ФОРМА ФУТЕРА */
+/* ФОРМА ФУТЕРА */
 .sub-form {
-  margin-left: 93px;
+  margin-left: auto;
 }
 .sub-area {
   margin-top: 20px;
@@ -902,3 +921,4 @@ fill: var(--accent-color);
     transform: translateY(-50%);
     fill: var(--white-color);
   }
+ 
