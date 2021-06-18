@@ -906,12 +906,9 @@ align-items: center;
 
 }
 
-.modal-form-check + .agree-control{
-   
-}
 
 .modal-form-check:focus + .agree-control .conditions-icon{
-  border: 3px solid var(--title-text-color);
+  border: 3px solid var(--accent-color);
 }
 
 .modal-form-check:checked + .agree-control .conditions-icon {
