@@ -18,7 +18,7 @@
   --placeholder-color: rgba(117, 117, 117, 0.5);
   --ft-border-color: rgba(255, 255, 255, 0.3);
   --card-set-gap: 30px;
-  --trn-time: 2500ms;
+  --trn-time: 250ms;
   --modal-button-color: rgba(0, 0, 0, 0.1);
 }
 /* цвет основного текста rgba(117, 117, 117, 1) */
@@ -905,7 +905,7 @@ fill: var(--accent-color);
 
 
 .modal-form-check:focus + .agree-control .conditions-icon{
-  border-color: var(--title-text-color);
+  border: 3px solid var(--title-text-color);
 }
 
 .modal-form-check:checked + .agree-control .conditions-icon {
