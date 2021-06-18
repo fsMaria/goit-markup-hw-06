@@ -801,6 +801,7 @@ html {
   padding-right: 39px;
 }
 .provoke-text {
+  display: block;
   margin-bottom: 12px;
   font-weight: 700;
   font-style: normal;
@@ -808,6 +809,7 @@ html {
   line-height: 1.15;
   letter-spacing: 0.03em;
   color: var(--title-text-color);
+  vertical-align: middle;
 }
 .form-group {
 display: flex;
@@ -894,7 +896,7 @@ fill: var(--accent-color);
   clip: rect(0 0 0 0);
 }
 .conditions-icon {
-  position: absolute;
+  
   margin-right: 7px;
   width: 16px;
   height: 15px;
