@@ -790,7 +790,6 @@ html {
 }
 [data-modal-close] svg:hover,
 [data-modal-close] svg:focus {
- 
   fill: var(--accent-color);
 }
 /*  ФОРМЫ ЗАЯВКИ */
@@ -880,6 +879,8 @@ fill: var(--accent-color);
   margin-top: 20px;
   display: inline-block;
   vertical-align: middle;
+  font-size: 100%;
+  position: relative;
 }
 
 .checkbox-hidden {
@@ -900,9 +901,14 @@ fill: var(--accent-color);
   fill: var(--white-color);
   border: 2px solid var(--title-text-color);
   border-radius: 1px;
-  
+ display: inline-block;
+  vertical-align: middle;
 }
+.agree-control{position: relative;}
 
+.modal-form-check + .agree-control{
+   
+}
 
 .modal-form-check:focus + .agree-control .conditions-icon{
   border: 3px solid var(--title-text-color);
