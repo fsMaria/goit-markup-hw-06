@@ -781,15 +781,18 @@ html {
   justify-content: center;
   align-items: center;
   cursor: pointer;
-}
-[data-modal-close] svg,
-[data-modal-close] svg {
   transition-property: fill;
   transition-duration: var(--trn-time);
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-[data-modal-close] svg:hover,
-[data-modal-close] svg:focus {
+/* [data-modal-close] svg,
+[data-modal-close] svg {
+  transition-property: fill;
+  transition-duration: var(--trn-time);
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+} */
+[data-modal-close]:hover,
+[data-modal-close]:focus {
   fill: var(--accent-color);
 }
 /*  ФОРМЫ ЗАЯВКИ */
